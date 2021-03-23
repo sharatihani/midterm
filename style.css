@@ -1,0 +1,454 @@
+@font-face {
+  font-family: bitterRegular;
+  src: url(Bitter-Regular.ttf);
+}
+
+@font-face {
+  font-family: langdonRegular;
+  src: url(Langdon.otf);
+}
+
+@font-face {
+  font-family: bitterItalic;
+  src: url(Bitter-Italic.ttf);
+}
+
+@font-face {
+  font-family: bitterBold;
+  src: url(Bitter-Bold.ttf);
+}
+
+body {
+  height:100%
+  padding: 0px;
+  margin:0px;
+  font-family: bitterRegular;
+  font-size:2vmin;
+  background-image: url(wall_texture.jpg);
+  background-size: cover;
+}
+
+html {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mainContainerGrid {
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+
+grid-template-areas:
+  "nav nav nav nav nav nav nav nav"
+  "hero hero hero hero hero hero hero hero"
+  "main main main main main main main main"
+  "header header header header header header header header"
+  "footer footer footer footer footer footer footer footer"
+}
+
+.menuWrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  grid-area: nav;
+  color: black;
+  padding: 1.2vw;
+  position: fixed;
+}
+.menuBox{
+  display: flex;
+  flex-direction: row;
+  height: 3vw;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 0.3vw;
+  border-color: #ffd600;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navLink{
+  display: flex;
+  flex-direction: row;
+  padding: 4.9vw;
+  font-size: 1.2vw;
+}
+
+.navLink a {
+  color: black;
+}
+
+.navLink a:hover {
+  color: #ffd600;
+}
+
+.navLink a:link {
+  text-decoration: none;
+}
+
+.navLink a:visited {
+  text-decoration: underline;
+}
+
+.logoSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  grid-area: hero;
+  grid-column: 1/5;
+  background-color: #FFD600;
+  padding-top: 3vw;
+  margin-top: 6vw;
+}
+
+.orderButton{
+  text-align: center;
+  border-style: solid;
+  border-width: 0.3vw;
+  border-radius: 3vw;
+  padding:1vw;
+  font-family: bitterRegular;
+  font-size: 2vw;
+  margin-top: 3vw;
+  width: 15vw;
+  background-color: #FFD600;
+}
+
+.orderButton a {
+  color: black;
+}
+
+.orderButton:hover {
+  background-color: #e6bf00;
+  cursor: pointer;
+}
+
+.orderButton a:link {
+  text-decoration: none;
+}
+
+.foodImage1{
+  grid-area: hero;
+  grid-column: 5/9;
+  background-image: url(R03.JPG);
+  background-size: cover;
+  height: 35vw;
+  background-position: center;
+  margin-top: 6vw;
+}
+
+.aboutWrapper{
+  display: flex;
+  grid-area: main;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.aboutSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 1vw;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  padding-left: 18vw;
+  padding-right: 18vw;
+  text-align: center;
+  border-style: solid;
+  border-width: 0.3vw;
+  border-color: #ffd600;
+}
+
+.aboutSection h1{
+  font-family: langdonRegular;
+  font-size: 6vw;
+  margin-bottom: 0;
+}
+
+.aboutSection h2{
+  font-family: bitterItalic;
+  font-size: 2.5vw;
+  margin-top: 0;
+}
+
+.aboutSection p{
+  font-size: 1.3vw;
+  line-height: 2vw;
+}
+
+mark{
+  background-color: #ffd600;
+}
+
+.aboutSection p:nth-child(3){
+  font-size: 1.6vw;
+  line-height: 2vw;
+}
+
+.aboutSection a{
+  color: #FFD600;
+  font-family: bitterBold;
+}
+
+.aboutSection a:hover{
+  color: #e6bf00;
+  cursor: pointer;
+}
+
+.homepageOutlet{
+  grid-area:header;
+  height: 40vw;
+  background-image: url(sb_outlet2.JPG);
+  background-position: center;
+  background-size: cover;
+  margin-top: 1vw;
+}
+
+.locationsButton{
+  text-align: center;
+  border-style: solid;
+  border-width: 0.3vw;
+  border-radius: 5vw;
+  padding:1vw;
+  font-family: bitterItalic;
+  font-size: 4vw;
+  margin-top: 15vw;
+  margin-left: 35vw;
+  margin-right: 35vw;
+  background-color: #FFD600;
+}
+
+.locationsButton a {
+  color: black;
+}
+
+.locationsButton:hover {
+  background-color: #e6bf00;
+  cursor: pointer;
+}
+
+.homepageOutlet:hover {
+  opacity: 0.9;
+}
+
+.footerBox{
+  grid-area:footer;
+  background-color: #ffd600;
+}
+
+.footerImage{
+  grid-area: footer;
+  grid-column: 3/7;
+  margin-top: 1vw;
+}
+
+.footerText{
+  text-align: center;
+  font-size: 0.8vw;
+  margin-top: 1vw;
+}
+
+.footerWhatsapp{
+  grid-area:footer;
+  grid-column: 8;
+}
+
+/* about page */
+
+.fivecolumnContainer{
+  grid-area:hero;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.foodImage{
+  display: block;
+  width: 100%;
+
+}
+
+.aboutSection1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  padding-left: 18vw;
+  padding-right: 18vw;
+  text-align: center;
+}
+
+.headingsAbout{
+  grid-area: hero;
+  position: relative;
+  text-align: center;
+  margin-top: 10vw;
+}
+
+.headingsAbout h1{
+  font-family: langdonRegular;
+  font-size: 8vw;
+  margin-bottom: 0;
+  text-shadow: 3px 3px #ffd600;
+}
+
+.headingsAbout h2{
+  font-family: bitterItalic;
+  font-size: 3vw;
+  margin-top: 0;
+}
+
+.aboutSection1{
+  border-style: solid;
+  border-color: #ffd600;
+  border-width: 0.3vw;
+  margin-top: 1vw;
+}
+
+.aboutSection1 p{
+  font-size: 1vw;
+  line-height: 2vw;
+}
+
+.aboutSection1 p:nth-child(1){
+  font-size: 1.7vw;
+  line-height: 2vw;
+  font-family: bitterItalic;
+
+}
+
+.aboutSection1 p:nth-child(6){
+  font-family: bitterItalic;
+}
+
+.companyAbout {
+  display: grid;
+  grid-area:main;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 1.2vw;
+  grid-row-gap: 1.2vw;
+  align-items: start;
+  /* margin-left: 10vw; */
+  /* margin-right: 10vw; */
+  margin-top: 2vw;
+}
+
+.companyAboutBox {
+  grid-column-end: span 6;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 1.2vw;
+}
+
+.aboutThumb {
+  width: 100%;
+  grid-column: 1 / span 3;
+}
+
+.aboutText {
+  grid-column: 4 / span 4;
+  padding-left: 5vw;
+  font-size: 1.2vw;
+  margin-top: 8vw;
+  margin-right: 10vw;
+}
+
+.aboutText > h2 {
+  margin-top: 0;
+  font-family: langdonRegular;
+  font-size: 4vw;
+}
+.companyAboutBox > p {
+  margin: 0;
+  padding: 0;
+}
+
+.valuesText{
+  font-size: 4vw;
+  text-shadow: 2px 2px #ffd600;
+  grid-column: 2 / span 4;
+  text-align: center;
+  font-family: langdonRegular;
+
+}
+
+.locationsGrid {
+  display: grid;
+  grid-area:main;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 1.2vw;
+  grid-row-gap: 1.2vw;
+  align-items: start;
+  /* margin-left: 10vw; */
+  /* margin-right: 10vw; */
+  margin-top: 2vw;
+}
+
+.locationsBox {
+  grid-column-end: span 6;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 1.2vw;
+  margin-top: 2vw;
+}
+
+.locationName {
+  font-size: 1vw;
+  grid-column: 2 / span 2;
+}
+
+.operatingHours {
+  grid-column: 4 / span 6;
+  padding-left: 5vw;
+  font-size: 1.2vw;
+  margin-right: 10vw;
+}
+
+.locationName > h2 {
+  margin-top: 0;
+  font-family: langdonRegular;
+  font-size: 3vw;
+  margin-bottom: 1vw;
+  text-decoration: underline;
+}
+
+.locationName h2:hover {
+  color: #ffd600;
+  cursor: pointer;
+}
+
+.locationName > p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2vw;
+}
+
+.operatingHours > h2 {
+  margin-top: 0;
+  font-family: bitterBold;
+  font-size: 2vw;
+  margin-bottom: 1vw;
+}
+.operatingHours > p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.locationsTitle{
+  grid-area: hero;
+  text-align: center;
+  font-family: langdonRegular;
+  font-size: 4vw;
+  position:relative;top:6vw;
+  background-color: #ffd600;
+  margin-bottom: 4vw;
+
+}
