@@ -664,7 +664,9 @@ mark{
   text-decoration: none;
 }
 
-.menuHeader{ 
+/* -- MENU SECTION -- */
+
+.menuHeader{
   grid-area: hero;
   height: 13vw;
   margin-top:2vw;
