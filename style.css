@@ -206,7 +206,7 @@ mark{
 .homepageOutlet{
   grid-area:header;
   height: 40vw;
-  background-image: url(outlet_1.jpg); 
+  background-image: url(outlet_1.jpg);
   background-position: center;
   background-size: cover;
   margin-top: 1vw;
@@ -662,4 +662,26 @@ mark{
 
 .emailButton a:link {
   text-decoration: none;
+}
+
+.menuHeader{
+  grid-area: hero;
+  height: 13vw;
+  margin-top:2vw;
+  font-size: 4vw;
+  text-align: center;
+  font-family: langdonRegular;
+  border-bottom: solid;
+  border-color: #ffd600;
+  border-width: 0.8vw;
+  text-shadow: 3px 3px #ffd600;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.menuItem{
+  grid-area: main;
+  text-align: center;
+  margin-bottom: 3vw;
+  margin-top: 1.5vw;
 }
