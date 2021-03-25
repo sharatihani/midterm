@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
+
     <div class="mainContainerGrid">
 
       <div class="menuWrapper">
@@ -24,8 +26,29 @@
           <h1>OUR LOCATIONS</h1>
         </div>
 
+      <div class="outletImages">
+        <img class="mySlides" src="outlet_1.JPG" style="width:100%;">
+        <img class="mySlides" src="outlet_2.JPG" style="width:100%;">
+        <img class="mySlides" src="outlet_3.JPG" style="width:100%;">
+        <img class="mySlides" src="outlet_5.JPG" style="width:100%;">
+      </div>
 
-      <div class="homepageOutlet"></div>
+      <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1}
+          x[slideIndex-1].style.display = "block";
+          setTimeout(carousel, 4000); // Change image every 2 seconds
+        }
+        </script>
 
         <div class="locationsGrid">
           <div class="locationsBox">
@@ -34,7 +57,7 @@
               <p>73, Jalan Setia Bakti , Bukit Damansara, 50490 Kuala Lumpur, WP Kuala Lumpur.</p>
             </div>
             <div class="operatingHours">
-              <h2>Daily 8:30am-9:00pm</h2>
+              <h2>Daily | 8:30am-9:00pm</h2>
               <p>For reservations / enquiries / takeaway,
                 call: +603-20112530 or Whatsapp us at +6010-7609838.</p>
             </div>
@@ -47,7 +70,7 @@
               No.145, Jalan Tun Razak, 50400 Kuala Lumpur.</p>
           </div>
           <div class="operatingHours">
-            <h2>Daily 8:30am-6:00pm</h2>
+            <h2>Daily | 8:30am-6:00pm</h2>
             <p>For reservations / enquiries, call: +603-26021565.</p>
           </div>
         </div>
@@ -60,7 +83,7 @@
               Seksyen 9, 40100 Shah Alam, Selangor</p>
           </div>
           <div class="operatingHours">
-            <h2>Daily 10:00am-9:00pm</h2>
+            <h2>Daily | 10:00am-9:00pm</h2>
             <p>For reservations / enquiries / takeaway, call: +603-55243629 or Whatsapp us at +6016-6749624.</p>
           </div>
         </div>
@@ -71,9 +94,42 @@
             <p>Lot B-2, Taman Tunku, Off, Jln Langgak Tunku, Bukit Tunku, 50480 Kuala Lumpur</p>
           </div>
           <div class="operatingHours">
-            <h2>Daily 7:30am-9:30pm</h2>
+            <h2>Daily | 7:30am-9:30pm</h2>
             <p>For reservations / enquiries / takeaway,
               call: +603-20112530 or Whatsapp us at +6010-7609838.</p>
+          </div>
+        </div>
+
+        <div class="locationsBox">
+          <div class="locationName">
+            <h2>SURIA KLCC</h2>
+            <p>Lot F223, Level 2, Suria KLCC, Kuala Lumpur City Centre, 50088 Kuala Lumpur</p>
+          </div>
+          <div class="operatingHours">
+            <h2>Daily | 10:00am-8:00pm</h2>
+            <p>For reservations / enquiries / takeaway, call: +603-2181 2255 or Whatsapp us at +6010-7629838</p>
+          </div>
+        </div>
+
+        <div class="locationsBox">
+          <div class="locationName">
+            <h2>TRX 106</h2>
+            <p>Lot 13A, Level P2, Exchange 106, Persiaran TRX, Jalan Tun Razak, 55188 Kuala Lumpur.</p>
+          </div>
+          <div class="operatingHours">
+            <h2>Mon-Sat | 9:00am-5:00pm</h2>
+            <p>For reservations / enquiries, call: +603-2110 6582 / +6010-9259838</p>
+          </div>
+        </div>
+
+        <div class="locationsBox">
+          <div class="locationName">
+            <h2>MENARA ALLIANZ SENTRAL</h2>
+            <p>LG3-1 & LG3-2, Level LG3 Menara Allianz, Jalan Tun Sambanthan 50470, Kuala Lumpur</p>
+          </div>
+          <div class="operatingHours">
+            <h2>Mon-Sat | 10:00am-7:00pm</h2>
+            <p>For reservations / enquiries / takeaway, call: +603-22760330 or Whatsapp us at +6010-2349838</p>
           </div>
         </div>
 
@@ -85,8 +141,21 @@
             <p class="footerText">© 2020 Ahh-Yum by Kampong Kravers. [Kampong Kravers (M) Sdn Bhd (803129-P)] All rights reserved </p>
           </div>
 
-        <div class="footerWhatsapp">
-          <img src="whatsapplogo.png" style="width:70%;" alt="whatsapp logo">
+          <div class="footerWhatsapp">
+            <a href="https://www.facebook.com/AhhYumByKampongKravers/"><img src="whatsapplogo.png" style="width:50%;" alt="whatsapp logo"></a>
+          </div>
+
+          <div class="footerWhatsappText">
+            <p>contact us on whatsapp!</p>
+          </div>
+
+          <div class="footerInsta">
+            <a href="https://www.instagram.com/ahh_yum/"><img src="instagramlogo.png" style="width:40%;" alt="insta logo"></a>
+          </div>
+
+          <div class="footerFacebook">
+            <a href="https://www.facebook.com/AhhYumByKampongKravers/"><img src="facebooklogo.png" style="width:32%;" alt="facebook logo"></a>
+          </div>
 
     </div>
   </body>
