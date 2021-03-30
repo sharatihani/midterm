@@ -48,24 +48,25 @@ grid-template-areas:
 }
 
 .menuWrapper {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
+  /* display: flex;
+  flex-direction: row; */
   grid-area: nav;
   color: black;
   padding: 1.2vw;
   position: fixed;
+  background-image: url(wall_texture.jpg);
+  box-shadow: 3px 3px 10px black;
+  z-index: +99;
+  width: 100%;
 }
 .menuBox{
   display: flex;
-  flex-direction: row;
-  height: 3vw;
-  justify-content: space-between;
+  /* height: 3vw; */
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-style: solid;
   border-width: 0.3vw;
+  margin-right: 2.2vw;
   /* border-color: #ffd600;
   background-color: rgba(255, 255, 255, 0.5); */
   background-image: url(wall_texture.jpg);
@@ -75,8 +76,8 @@ grid-template-areas:
 .navLink{
   display: flex;
   flex-direction: row;
-  padding: 4.9vw;
-  font-size: 1.2vw;
+  padding: 0.8vw;
+  font-size: 2.8vmin;
 }
 
 .navLink a {
@@ -89,10 +90,6 @@ grid-template-areas:
 
 .navLink a:link {
   text-decoration: none;
-}
-
-.navLink a:visited {
-  text-decoration: underline;
 }
 
 .logoSection{
@@ -272,6 +269,7 @@ mark{
 .footerBox{
   grid-area:footer;
   background-color: #ffd600;
+
 }
 
 .footerImage{
@@ -313,6 +311,7 @@ mark{
   grid-column: 2;
   margin-top: 2vw;
 }
+
 
 /*  -- ABOUT PAGE --  */
 
@@ -575,7 +574,7 @@ mark{
 
 .contactHeading{
   grid-area: hero;
-  position: relative;
+  /* position: relative; */
   text-align: center;
   margin-top: 3vw;
 }
@@ -650,7 +649,7 @@ mark{
   grid-column: 4/5;
   margin-left: 2vw;
 }
- 
+
 .emailButton a {
   color: black;
 }
@@ -686,4 +685,56 @@ mark{
   text-align: center;
   margin-bottom: 3vw;
   margin-top: 1.5vw;
+}
+
+.feedbackBox{
+  grid-area:box;
+}
+
+.feedbackBox a {
+  color:black;
+}
+
+.feedbackBox a:hover {
+  color: #ffd600;
+}
+
+.feedbackText{
+  text-align: center;
+  font-size: 1.5vw;
+  font-family: bitterItalic;
+}
+
+.orderButton2Box{
+  text-align: center;
+  grid-area:header;
+  grid-column: 4/6;
+}
+
+.orderButton2{
+  text-align: center;
+  border-style: solid;
+  border-width: 0.3vw;
+  border-radius: 3vw;
+  padding:1vw;
+  font-family: bitterRegular;
+  font-size: 2vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  background-color: #FFD600;
+  grid-area:header;
+
+}
+
+.orderButton2 a {
+  color: black;
+}
+
+.orderButton2:hover {
+  background-color: #e6bf00;
+  cursor: pointer;
+}
+
+.orderButton2 a:link {
+  text-decoration: none;
 }
